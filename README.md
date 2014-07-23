@@ -16,11 +16,19 @@ The original raw data set used for generating this tidy data set can be download
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The process of derving the tidy data set from the original raw data set was automated using an R script `run_analysis.R`. The rest of this README.md will describe what files are included along with the tidy data set and the process of how it was created.
+The process of derving the tidy data set from the original raw data set was automated using an R script *run_analysis.R*. The rest of this README.md will describe what files are included along with the tidy data set and the process of how it was created.
 
-### The dataset includes the following files
+### The data set includes the following files
 
-- run_analysis.R : An R script that convert the orignal raw data set into a tidy data set and export it to a text file `tidyDataSetMeanValues.txt`
+- README.md: This file :)
+- run_analysis.R : An R script that convert the orignal raw data set into a tidy data set and export it to a text file *tidyDataSetMeanValues.txt*
+- tidyDataSetMeanValues.txt: *The* tidy data set. This was also uploaded to Coursera's submission page and was included in this repo for convenience. This data set has 180 obervations (rows) and 68 variables (columns, to be described in the code book).
+- codeBook.md: The code book that describes the naming convention of the variables and the variables themselves.
+ 
+### The original raw data set and how it was converted into the tidy data set
+
+xxx
+
 
 
 listing all the related files, 
