@@ -58,7 +58,9 @@ This original raw data set is converted into the tidy data set by the R script *
     - Changing "std" in the variable names to "StdDev".
     - Fix the "bodybody" naming error in the original data set.
 
+
     The resulting intermediate data set now contains descriptive variable names that are compatible with R and conform to the CamelCase convetion starting with a lower case letter.
+
 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
