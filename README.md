@@ -22,7 +22,7 @@ The process of derving the tidy data set from the original raw data set was auto
 
 - README.md: This file :)
 - run_analysis.R : An R script that convert the orignal raw data set into a tidy data set and export it to a text file *tidyDataSetMeanValues.txt*
-- tidyDataSetMeanValues.txt: *The* tidy data set. This was also uploaded to Coursera's submission page and was included in this repo for convenience. This data set has 180 obervations (rows) and 68 variables (columns, to be described in the code book).
+- tidyDataSetMeanValues.txt: *The* tidy data set. This was uploaded to Coursera's submission page and was also included in this repo for convenience. This data set has 180 obervations (rows) and 68 variables (columns, to be described in the code book).
 - codeBook.md: The code book that describes the naming convention of the variables and the variables themselves.
  
 ### The original raw data set and how it was converted into the tidy data set
@@ -49,7 +49,7 @@ This original raw data set is converted into the tidy data set by the R script *
 
 4. Appropriately labels the data set with descriptive variable names
  
-    * This step was carried out in a number of sub-steps, making use of the `gsub()` and `sub()` functions.  
+   This step was carried out in a number of sub-steps, making use of the `gsub()` and `sub()` functions.  
  
    Removing the "*-*", "*(*", and "*)*" characters from the variable names, as these may cause error in R.  
  
