@@ -35,21 +35,21 @@ This original raw data set is converted into the tidy data set by the R script *
 
 1. Merges the training and the test sets to create one data set
 
-The script read in the observations for the 561 variable for the train data set (*x_train.txt*), the kind of activities associated with the observations (*y_train.txt*), and the subject associated with the observations (*subject_train.txt*) with the `read.table()` function as data frames. The same data are read in for the test data set (*x_test.txt*, *y_test.txt*, and *subject_test.txt*).
+    The script read in the observations for the 561 variable for the train data set (*x_train.txt*), the kind of activities associated with the observations (*y_train.txt*), and the subject associated with the observations (*subject_train.txt*) with the `read.table()` function as data frames. The same data are read in for the test data set (*x_test.txt*, *y_test.txt*, and *subject_test.txt*).
 
-These 6 data frames were then combined into the merged data set of 10299 observations of 563 variables with a combination of the `cbind()` and `rbind()` functions. Names were also assigned to the columns, using "subject", "activity", and the names listed in the *features.txt* files that came with the original raw data set. This makes the next step easier.
+    These 6 data frames were then combined into the merged data set of 10299 observations of 563 variables with a combination of the `cbind()` and `rbind()` functions. Names were also assigned to the columns, using "subject", "activity", and the names listed in the *features.txt* files that came with the original raw data set. This makes the next step easier.
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement
 
-These would be the columns that contain either "*mean()*" or "*std()*". Of cos the "subject" and "activity" columns were also extracted. This was achieved by using the `grep` function. The resulting intermediate data set contained 10299 observations of 68 variables.
+    These would be the columns that contain either "*mean()*" or "*std()*". Of cos the "subject" and "activity" columns were also extracted. This was achieved by using the `grep` function. The resulting intermediate data set contained 10299 observations of 68 variables.
 
 3. Uses descriptive activity names to name the activities in the data set
 
-The 6 activity names in the *activity_labels.txt* file were used to replace the corresponding activity originally coded as integer from 1 to 6 in the "activity" column.
+    The 6 activity names in the *activity_labels.txt* file were used to replace the corresponding activity originally coded as integer from 1 to 6 in the "activity" column.
 
 4. Appropriately labels the data set with descriptive variable names
 
-This step was carried out in a number of sub-steps, making use of the `gsub()` and `sub()` functions.
+    This step was carried out in a number of sub-steps, making use of the `gsub()` and `sub()` functions.
 
 a. Removing the "*-*", "*(*", and "*)*" characters from the variable names, as these may cause error in R.
 b. Changing the "*t*" prefix in the time domain data to "*time*", to make the names more self descriptive.
@@ -58,7 +58,7 @@ d. Changing "mean" in the variable names to "Mean" to make it conform with my pr
 e. Changing "std" in the variable names to "StdDev".
 f. Fix the "bodybody" naming error in the original data set.
 
-The resulting intermediate data set now contains descriptive variable names that are compatible with R and conform to the CamelCase convetion starting with a lower case letter.
+    The resulting intermediate data set now contains descriptive variable names that are compatible with R and conform to the CamelCase convetion starting with a lower case letter.
 
 5. 
 
