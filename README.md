@@ -54,20 +54,10 @@ This original raw data set is converted into the tidy data set by the R script *
 
 
   - Removing the "*-*", "*(*", and "*)*" characters from the variable names, as these may cause error in R.
-    
-    
   - Changing the "*t*" prefix in the time domain data to "*time*", to make the names more self descriptive.
-    
-    
   - Changing the "*f*" prefix in the time domain data to "*freq*", to make the names more self descriptive.
-    
-    
   - Changing "mean" in the variable names to "Mean" to make it conform with my preferred way of capitalisation (CamelCase that begins with a lower case letter).
-    
-    
   - Changing "std" in the variable names to "StdDev".
-    
-    
   - Fix the "bodybody" naming error in the original data set.
 
 
@@ -76,7 +66,7 @@ This original raw data set is converted into the tidy data set by the R script *
 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-    xxx xxx
+   xxx xxx
 
 
 listing all the related files, 
