@@ -94,10 +94,10 @@ Some points to note:
 | freqBodyGyroStdDevZ |num  |[-1,1]  |Standard deviation value of the frequency domain body angular velocity signals in the Z axis  |
 | freqBodyAccMagMean |num  |[-1,1]  |Mean value of the magnitude of the frequency domain body acceleration signals  |
 | freqBodyAccMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the frequency domain body acceleration signals  |
-| freqBodyAccJerkMagMean |num  |[-1,1]  |  |
-| freqBodyAccJerkMagStdDev |num  |[-1,1]  |  |
-| freqBodyGyroMagMean |num  |[-1,1]  |  |
-| freqBodyGyroMagStdDev |num  |[-1,1]  |  |
-| freqBodyGyroJerkMagMean |num  |[-1,1]  |  |
-| freqBodyGyroJerkMagStdDev |num  |[-1,1]  |  |
+| freqBodyAccJerkMagMean |num  |[-1,1]  |Mean value of the magnitude of the frequency domain body acceleration Jerk signals  |
+| freqBodyAccJerkMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the frequency domain body acceleration Jerk signals  |
+| freqBodyGyroMagMean |num  |[-1,1]  |Mean value of the magnitude of the frequency domain body angular velocity signals  |
+| freqBodyGyroMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the frequency domain body angular velocity signals  |
+| freqBodyGyroJerkMagMean |num  |[-1,1]  |Mean value of the magnitude of the frequency domain body angular velocity Jerk signals  |
+| freqBodyGyroJerkMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the frequency domain body angular velocity Jerk signals  |
 
