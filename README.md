@@ -85,4 +85,5 @@ Finally, the tidy data set was written to a text file, "*tidyDataSetMeanValues.t
 * The tidy data set text file "*tidyDataSetMeanValues.txt*" is saved into the "output" folder. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
 
 
+
 terenceltl, Jul 2014
