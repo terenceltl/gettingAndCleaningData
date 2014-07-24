@@ -76,13 +76,13 @@ Finally, the tidy data set was written to a text file, "*tidyDataSetMeanValues.t
 
 ### How to use the *run_analysis.R* script  
   
-    * From the *UCI HAR Dataset.zip* file, extract the "*UCI HAR Dataset*" folder into a working directory.
-    * The script file should be placed in the same directory into which the "UCI HAR Dataset" folder was extracted.
-    * You may have to manually set the working directory to the location of the source file.
-    * The "*plyr*" package is required for function like ddply() and numcolwise(). As such, you may wish to do `install.packages("plyr")` if necessary.
-    * My own preferred way to run the script is to open the script in RStudio, and do a Session>Set Working Directory>To Source File Location. Then select the whole script and press CTRL-ENTER to run all the lines.
-    * The whole process of converting the original raw data set to the tidy data set may take a while, depending on your hardware.
-    * The tidy data set text file "*tidyDataSetMeanValues.txt*" is saved into the "output" folder. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
+* From the *UCI HAR Dataset.zip* file, extract the "*UCI HAR Dataset*" folder into a working directory.
+* The script file should be placed in the same directory into which the "UCI HAR Dataset" folder was extracted.
+* You may have to manually set the working directory to the location of the source file.
+* The "*plyr*" package is required for function like ddply() and numcolwise(). As such, you may wish to do `install.packages("plyr")` if necessary.
+* My own preferred way to run the script is to open the script in RStudio, and do a Session>Set Working Directory>To Source File Location. Then select the whole script and press CTRL-ENTER to run all the lines.
+* The whole process of converting the original raw data set to the tidy data set may take a while, depending on your hardware.
+* The tidy data set text file "*tidyDataSetMeanValues.txt*" is saved into the "output" folder. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
 
 
 terenceltl, Jul 2014
