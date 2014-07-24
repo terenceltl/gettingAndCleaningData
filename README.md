@@ -64,6 +64,8 @@ This original raw data set is converted into the tidy data set by the R script *
     This step aims to calculate group-wise mean values for all possible combinations of subjects (30) and activities (6), and as such resulted in a data set with 180 observations of 68 variables. The `ddply()` function was used for splitting the data into the proper groups, and the `numcolwise()` function was used to allow the `mean()` function to calculate the mean values for every numeric column.  
   
   
+This resulting data set is tidy, because it meets the criteria of "each variable forms a column", "each observation forms a row", and "each type of observational unit forms a table".
+  
 This "wide" format of tidy data set is not the only acceptable format for tidy data. For details, one may refer to Hadley Wickham's *Tidy Data* paper:
   
 http://vita.had.co.nz/papers/tidy-data.pdf
