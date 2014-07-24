@@ -10,146 +10,94 @@ The original raw data set used for generating this tidy data set can be download
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Please refer to the README.md file on how the tidy data set was created.
+Please refer to the README.md file in this repo on how the tidy data set was created, and the README.txt and features_info.txt files coming with the original data set for the experimental design.
+
+Some points to note:
+
+* The variable names conform to the CamelCase convetion starting with a lower case letter
+* Though obvious to some, some explanation of the short form / keywords used in the variable names:
+    * time: time domain signals that were captured at a constant rate of 50 Hz
+    * freq: frequency domain signals produced by Fast Fourier Transform
+    * Body: the body component of the signals separated using a low pass Butterworth filter with a corner frequency of 0.3 Hz
+    * Gravity: the gravity component of the signals separated using a low pass Butterworth filter with a corner frequency of 0.3 Hz
+    * Acc: signals coming from the accelerometer
+    * Gyro: signals coming from the gyroscope
+    * Jerk: Jerk signals obtained by deriving the body linear acceleration or angular velocity in time
+    * Mag: the magnitude of the three-dimensional signals, calculated using the Euclidean norm
+    * X,Y,Z: the 3-axial signals in the X, Y and Z directions
+    * Mean: the mean value estimated from these signals
+    * StdDev: the standard deviation estimated from these signals
+* Finally, it should be noted that the values in the tidy data set are the group-wise mean (by both subject and activity) of the values in the original raw data set. Well, yes, so they are mean of mean values and mean of standard deviation values.
 
 
 | Variable name | Class | Range of values / code set | Description |
 | --- | --- | --- | --- |
-| subject |  |  |  |
-| activity |  |  |  |
-| timeBodyAccMeanX |  |  |  |
-| timeBodyAccMeanY |  |  |  |
-| timeBodyAccMeanZ |  |  |  |
-| timeBodyAccStdDevX |  |  |  |
-| timeBodyAccStdDevY |  |  |  |
-| timeBodyAccStdDevZ |  |  |  |
-| timeGravityAccMeanX |  |  |  |
-| timeGravityAccMeanY |  |  |  |
-| timeGravityAccMeanZ |  |  |  |
-| timeGravityAccStdDevX |  |  |  |
-| timeGravityAccStdDevY |  |  |  |
-| timeGravityAccStdDevZ |  |  |  |
-| timeBodyAccJerkMeanX |  |  |  |
-| timeBodyAccJerkMeanY |  |  |  |
-| timeBodyAccJerkMeanZ |  |  |  |
-| timeBodyAccJerkStdDevX |  |  |  |
-| timeBodyAccJerkStdDevY |  |  |  |
-| timeBodyAccJerkStdDevZ |  |  |  |
-| timeBodyGyroMeanX |  |  |  |
-| timeBodyGyroMeanY |  |  |  |
-| timeBodyGyroMeanZ |  |  |  |
-| timeBodyGyroStdDevX |  |  |  |
-| timeBodyGyroStdDevY |  |  |  |
-| timeBodyGyroStdDevZ |  |  |  |
-| timeBodyGyroJerkMeanX |  |  |  |
-| timeBodyGyroJerkMeanY |  |  |  |
-| timeBodyGyroJerkMeanZ |  |  |  |
-| timeBodyGyroJerkStdDevX |  |  |  |
-| timeBodyGyroJerkStdDevY |  |  |  |
-| timeBodyGyroJerkStdDevZ |  |  |  |
-| timeBodyAccMagMean |  |  |  |
-| timeBodyAccMagStdDev |  |  |  |
-| timeGravityAccMagMean |  |  |  |
-| timeGravityAccMagStdDev |  |  |  |
-| timeBodyAccJerkMagMean |  |  |  |
-| timeBodyAccJerkMagStdDev |  |  |  |
-| timeBodyGyroMagMean |  |  |  |
-| timeBodyGyroMagStdDev |  |  |  |
-| timeBodyGyroJerkMagMean |  |  |  |
-| timeBodyGyroJerkMagStdDev |  |  |  |
-| freqBodyAccMeanX |  |  |  |
-| freqBodyAccMeanY |  |  |  |
-| freqBodyAccMeanZ |  |  |  |
-| freqBodyAccStdDevX |  |  |  |
-| freqBodyAccStdDevY |  |  |  |
-| freqBodyAccStdDevZ |  |  |  |
-| freqBodyAccJerkMeanX |  |  |  |
-| freqBodyAccJerkMeanY |  |  |  |
-| freqBodyAccJerkMeanZ |  |  |  |
-| freqBodyAccJerkStdDevX |  |  |  |
-| freqBodyAccJerkStdDevY |  |  |  |
-| freqBodyAccJerkStdDevZ |  |  |  |
-| freqBodyGyroMeanX |  |  |  |
-| freqBodyGyroMeanY |  |  |  |
-| freqBodyGyroMeanZ |  |  |  |
-| freqBodyGyroStdDevX |  |  |  |
-| freqBodyGyroStdDevY |  |  |  |
-| freqBodyGyroStdDevZ |  |  |  |
-| freqBodyAccMagMean |  |  |  |
-| freqBodyAccMagStdDev |  |  |  |
-| freqBodyAccJerkMagMean |  |  |  |
-| freqBodyAccJerkMagStdDev |  |  |  |
-| freqBodyGyroMagMean |  |  |  |
-| freqBodyGyroMagStdDev |  |  |  |
-| freqBodyGyroJerkMagMean |  |  |  |
-| freqBodyGyroJerkMagStdDev |  |  |  |
+| subject |  |[-1,1]  |  |
+| activity |  |[-1,1]  |  |
+| timeBodyAccMeanX |  |[-1,1]  |  |
+| timeBodyAccMeanY |  |[-1,1]  |  |
+| timeBodyAccMeanZ |  |[-1,1]  |  |
+| timeBodyAccStdDevX |  |[-1,1]  |  |
+| timeBodyAccStdDevY |  |[-1,1]  |  |
+| timeBodyAccStdDevZ |  |[-1,1]  |  |
+| timeGravityAccMeanX |  |[-1,1]  |  |
+| timeGravityAccMeanY |  |[-1,1]  |  |
+| timeGravityAccMeanZ |  |[-1,1]  |  |
+| timeGravityAccStdDevX |  |[-1,1]  |  |
+| timeGravityAccStdDevY |  |[-1,1]  |  |
+| timeGravityAccStdDevZ |  |[-1,1]  |  |
+| timeBodyAccJerkMeanX |  |[-1,1]  |  |
+| timeBodyAccJerkMeanY |  |[-1,1]  |  |
+| timeBodyAccJerkMeanZ |  |[-1,1]  |  |
+| timeBodyAccJerkStdDevX |  |[-1,1]  |  |
+| timeBodyAccJerkStdDevY |  |[-1,1]  |  |
+| timeBodyAccJerkStdDevZ |  |[-1,1]  |  |
+| timeBodyGyroMeanX |  |[-1,1]  |  |
+| timeBodyGyroMeanY |  |[-1,1]  |  |
+| timeBodyGyroMeanZ |  |[-1,1]  |  |
+| timeBodyGyroStdDevX |  |[-1,1]  |  |
+| timeBodyGyroStdDevY |  |[-1,1]  |  |
+| timeBodyGyroStdDevZ |  |[-1,1]  |  |
+| timeBodyGyroJerkMeanX |  |[-1,1]  |  |
+| timeBodyGyroJerkMeanY |  |[-1,1]  |  |
+| timeBodyGyroJerkMeanZ |  |[-1,1]  |  |
+| timeBodyGyroJerkStdDevX |  |[-1,1]  |  |
+| timeBodyGyroJerkStdDevY |  |[-1,1]  |  |
+| timeBodyGyroJerkStdDevZ |  |[-1,1]  |  |
+| timeBodyAccMagMean |  |[-1,1]  |  |
+| timeBodyAccMagStdDev |  |[-1,1]  |  |
+| timeGravityAccMagMean |  |[-1,1]  |  |
+| timeGravityAccMagStdDev |  |[-1,1]  |  |
+| timeBodyAccJerkMagMean |  |[-1,1]  |  |
+| timeBodyAccJerkMagStdDev |  |[-1,1]  |  |
+| timeBodyGyroMagMean |  |[-1,1]  |  |
+| timeBodyGyroMagStdDev |  |[-1,1]  |  |
+| timeBodyGyroJerkMagMean |  |[-1,1]  |  |
+| timeBodyGyroJerkMagStdDev |  |[-1,1]  |  |
+| freqBodyAccMeanX |  |[-1,1]  |  |
+| freqBodyAccMeanY |  |[-1,1]  |  |
+| freqBodyAccMeanZ |  |[-1,1]  |  |
+| freqBodyAccStdDevX |  |[-1,1]  |  |
+| freqBodyAccStdDevY |  |[-1,1]  |  |
+| freqBodyAccStdDevZ |  |[-1,1]  |  |
+| freqBodyAccJerkMeanX |  |[-1,1]  |  |
+| freqBodyAccJerkMeanY |  |[-1,1]  |  |
+| freqBodyAccJerkMeanZ |  |[-1,1]  |  |
+| freqBodyAccJerkStdDevX |  |[-1,1]  |  |
+| freqBodyAccJerkStdDevY |  |[-1,1]  |  |
+| freqBodyAccJerkStdDevZ |  |[-1,1]  |  |
+| freqBodyGyroMeanX |  |[-1,1]  |  |
+| freqBodyGyroMeanY |  |[-1,1]  |  |
+| freqBodyGyroMeanZ |  |[-1,1]  |  |
+| freqBodyGyroStdDevX |  |[-1,1]  |  |
+| freqBodyGyroStdDevY |  |[-1,1]  |  |
+| freqBodyGyroStdDevZ |  |[-1,1]  |  |
+| freqBodyAccMagMean |  |[-1,1]  |  |
+| freqBodyAccMagStdDev |  |[-1,1]  |  |
+| freqBodyAccJerkMagMean |  |[-1,1]  |  |
+| freqBodyAccJerkMagStdDev |  |[-1,1]  |  |
+| freqBodyGyroMagMean |  |[-1,1]  |  |
+| freqBodyGyroMagStdDev |  |[-1,1]  |  |
+| freqBodyGyroJerkMagMean |  |[-1,1]  |  |
+| freqBodyGyroJerkMagStdDev |  |[-1,1]  |  |
 
-
-1	subject
-2	activity
-3	timeBodyAccMeanX
-4	timeBodyAccMeanY
-5	timeBodyAccMeanZ
-6	timeBodyAccStdDevX
-7	timeBodyAccStdDevY
-8	timeBodyAccStdDevZ
-9	timeGravityAccMeanX
-10	timeGravityAccMeanY
-11	timeGravityAccMeanZ
-12	timeGravityAccStdDevX
-13	timeGravityAccStdDevY
-14	timeGravityAccStdDevZ
-15	timeBodyAccJerkMeanX
-16	timeBodyAccJerkMeanY
-17	timeBodyAccJerkMeanZ
-18	timeBodyAccJerkStdDevX
-19	timeBodyAccJerkStdDevY
-20	timeBodyAccJerkStdDevZ
-21	timeBodyGyroMeanX
-22	timeBodyGyroMeanY
-23	timeBodyGyroMeanZ
-24	timeBodyGyroStdDevX
-25	timeBodyGyroStdDevY
-26	timeBodyGyroStdDevZ
-27	timeBodyGyroJerkMeanX
-28	timeBodyGyroJerkMeanY
-29	timeBodyGyroJerkMeanZ
-30	timeBodyGyroJerkStdDevX
-31	timeBodyGyroJerkStdDevY
-32	timeBodyGyroJerkStdDevZ
-33	timeBodyAccMagMean
-34	timeBodyAccMagStdDev
-35	timeGravityAccMagMean
-36	timeGravityAccMagStdDev
-37	timeBodyAccJerkMagMean
-38	timeBodyAccJerkMagStdDev
-39	timeBodyGyroMagMean
-40	timeBodyGyroMagStdDev
-41	timeBodyGyroJerkMagMean
-42	timeBodyGyroJerkMagStdDev
-43	freqBodyAccMeanX
-44	freqBodyAccMeanY
-45	freqBodyAccMeanZ
-46	freqBodyAccStdDevX
-47	freqBodyAccStdDevY
-48	freqBodyAccStdDevZ
-49	freqBodyAccJerkMeanX
-50	freqBodyAccJerkMeanY
-51	freqBodyAccJerkMeanZ
-52	freqBodyAccJerkStdDevX
-53	freqBodyAccJerkStdDevY
-54	freqBodyAccJerkStdDevZ
-55	freqBodyGyroMeanX
-56	freqBodyGyroMeanY
-57	freqBodyGyroMeanZ
-58	freqBodyGyroStdDevX
-59	freqBodyGyroStdDevY
-60	freqBodyGyroStdDevZ
-61	freqBodyAccMagMean
-62	freqBodyAccMagStdDev
-63	freqBodyAccJerkMagMean
-64	freqBodyAccJerkMagStdDev
-65	freqBodyGyroMagMean
-66	freqBodyGyroMagStdDev
-67	freqBodyGyroJerkMagMean
-68	freqBodyGyroJerkMagStdDev
