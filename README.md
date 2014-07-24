@@ -23,7 +23,7 @@ The process of derving the tidy data set from the original raw data set was auto
 - README.md: This file : )
 - run_analysis.R : An R script that convert the orignal raw data set into a tidy data set and export it to a text file *tidyDataSetMeanValues.txt*
 - tidyDataSetMeanValues.txt: *The* tidy data set. This was uploaded to Coursera's submission page and was also included in this repo for convenience. This data set has 180 obervations (rows) and 68 variables (columns, to be described in the code book).
-- codeBook.md: The code book that describes the naming convention of the variables and the variables themselves.
+- CodeBook.md: The code book that describes the naming convention of the variables and the variables themselves.
  
 ### The original raw data set and how it was converted into the tidy data set
 
