@@ -1,8 +1,8 @@
-## Code book for the Tidy Data Set Created in the Course Project for the Getting and Cleaning Data Coursera Course
+## Code Book for the Tidy Data Set Created in the Course Project for the Getting and Cleaning Data Coursera Course
 
 This cook book document aims to describe the variables in the tidy data set.
 
-The tidy data set was derived from the "Human Activity Recognition Using Smartphones Data Set", which are data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description of the experimental design and the raw data set itself can be found here:
+The tidy data set (180 obervations of 68 variables) was derived from the "Human Activity Recognition Using Smartphones Data Set", which are data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description of the experimental design and the raw data set itself can be found here:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
