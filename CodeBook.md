@@ -10,7 +10,7 @@ The original raw data set used for generating this tidy data set can be download
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Please refer to the README.md file for how the tidy data set was created.
+Please refer to the README.md file on how the tidy data set was created.
 
 
 | Variable name | Class | Range of values / code set | Description |
