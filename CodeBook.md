@@ -61,39 +61,39 @@ Some points to note:
 | timeBodyGyroJerkMeanX |num  |[-1,1]  |Mean value of the time domain body angular velocity Jerk signals in the X axis  |
 | timeBodyGyroJerkMeanY |num  |[-1,1]  |Mean value of the time domain body angular velocity Jerk signals in the Y axis  |
 | timeBodyGyroJerkMeanZ |num  |[-1,1]  |Mean value of the time domain body angular velocity Jerk signals in the Z axis  |
-| timeBodyGyroJerkStdDevX |num  |[-1,1]  |  |
-| timeBodyGyroJerkStdDevY |num  |[-1,1]  |  |
-| timeBodyGyroJerkStdDevZ |num  |[-1,1]  |  |
-| timeBodyAccMagMean |num  |[-1,1]  |  |
-| timeBodyAccMagStdDev |num  |[-1,1]  |  |
-| timeGravityAccMagMean |num  |[-1,1]  |  |
-| timeGravityAccMagStdDev |num  |[-1,1]  |  |
-| timeBodyAccJerkMagMean |num  |[-1,1]  |  |
-| timeBodyAccJerkMagStdDev |num  |[-1,1]  |  |
-| timeBodyGyroMagMean |num  |[-1,1]  |  |
-| timeBodyGyroMagStdDev |num  |[-1,1]  |  |
-| timeBodyGyroJerkMagMean |num  |[-1,1]  |  |
-| timeBodyGyroJerkMagStdDev |num  |[-1,1]  |  |
-| freqBodyAccMeanX |num  |[-1,1]  |  |
-| freqBodyAccMeanY |num  |[-1,1]  |  |
-| freqBodyAccMeanZ |num  |[-1,1]  |  |
-| freqBodyAccStdDevX |num  |[-1,1]  |  |
-| freqBodyAccStdDevY |num  |[-1,1]  |  |
-| freqBodyAccStdDevZ |num  |[-1,1]  |  |
-| freqBodyAccJerkMeanX |num  |[-1,1]  |  |
-| freqBodyAccJerkMeanY |num  |[-1,1]  |  |
-| freqBodyAccJerkMeanZ |num  |[-1,1]  |  |
-| freqBodyAccJerkStdDevX |num  |[-1,1]  |  |
-| freqBodyAccJerkStdDevY |num  |[-1,1]  |  |
-| freqBodyAccJerkStdDevZ |num  |[-1,1]  |  |
-| freqBodyGyroMeanX |num  |[-1,1]  |  |
-| freqBodyGyroMeanY |num  |[-1,1]  |  |
-| freqBodyGyroMeanZ |num  |[-1,1]  |  |
-| freqBodyGyroStdDevX |num  |[-1,1]  |  |
-| freqBodyGyroStdDevY |num  |[-1,1]  |  |
-| freqBodyGyroStdDevZ |num  |[-1,1]  |  |
-| freqBodyAccMagMean |num  |[-1,1]  |  |
-| freqBodyAccMagStdDev |num  |[-1,1]  |  |
+| timeBodyGyroJerkStdDevX |num  |[-1,1]  |Standard deviation value of the time domain body angular velocity Jerk signals in the X axis  |
+| timeBodyGyroJerkStdDevY |num  |[-1,1]  |Standard deviation value of the time domain body angular velocity Jerk signals in the Y axis  |
+| timeBodyGyroJerkStdDevZ |num  |[-1,1]  |Standard deviation value of the time domain body angular velocity Jerk signals in the Z axis  |
+| timeBodyAccMagMean |num  |[-1,1]  |Mean value of the magnitude of the time domain body acceleration signals  |
+| timeBodyAccMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the time domain body acceleration signals  |
+| timeGravityAccMagMean |num  |[-1,1]  |Mean value of the magnitude of the time domain gravity acceleration signals  |
+| timeGravityAccMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the time domain gravity acceleration signals  |
+| timeBodyAccJerkMagMean |num  |[-1,1]  |Mean value of the magnitude of the time domain body acceleration Jerk signals  |
+| timeBodyAccJerkMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the time domain body acceleration Jerk signals  |
+| timeBodyGyroMagMean |num  |[-1,1]  |Mean value of the magnitude of the time domain body angular velocity signals  |
+| timeBodyGyroMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the time domain body angular velocity signals  |
+| timeBodyGyroJerkMagMean |num  |[-1,1]  |Mean value of the magnitude of the time domain body angular velocity Jerk signals  |
+| timeBodyGyroJerkMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the time domain body angular velocity Jerk signals  |
+| freqBodyAccMeanX |num  |[-1,1]  |Mean value of the frequency domain body acceleration signals in the X axis  |
+| freqBodyAccMeanY |num  |[-1,1]  |Mean value of the frequency domain body acceleration signals in the Y axis  |
+| freqBodyAccMeanZ |num  |[-1,1]  |Mean value of the frequency domain body acceleration signals in the Z axis  |
+| freqBodyAccStdDevX |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration signals in the X axis  |
+| freqBodyAccStdDevY |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration signals in the Y axis  |
+| freqBodyAccStdDevZ |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration signals in the Z axis  |
+| freqBodyAccJerkMeanX |num  |[-1,1]  |Mean value of the frequency domain body acceleration Jerk signals in the X axis  |
+| freqBodyAccJerkMeanY |num  |[-1,1]  |Mean value of the frequency domain body acceleration Jerk signals in the Y axis  |
+| freqBodyAccJerkMeanZ |num  |[-1,1]  |Mean value of the frequency domain body acceleration Jerk signals in the Z axis  |
+| freqBodyAccJerkStdDevX |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration Jerk signals in the X axis  |
+| freqBodyAccJerkStdDevY |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration Jerk signals in the Y axis  |
+| freqBodyAccJerkStdDevZ |num  |[-1,1]  |Standard deviation value of the frequency domain body acceleration Jerk signals in the Z axis  |
+| freqBodyGyroMeanX |num  |[-1,1]  |Mean value of the frequency domain body angular velocity signals in the X axis  |
+| freqBodyGyroMeanY |num  |[-1,1]  |Mean value of the frequency domain body angular velocity signals in the Y axis  |
+| freqBodyGyroMeanZ |num  |[-1,1]  |Mean value of the frequency domain body angular velocity signals in the Z axis  |
+| freqBodyGyroStdDevX |num  |[-1,1]  |Standard deviation value of the frequency domain body angular velocity signals in the X axis  |
+| freqBodyGyroStdDevY |num  |[-1,1]  |Standard deviation value of the frequency domain body angular velocity signals in the Y axis  |
+| freqBodyGyroStdDevZ |num  |[-1,1]  |Standard deviation value of the frequency domain body angular velocity signals in the Z axis  |
+| freqBodyAccMagMean |num  |[-1,1]  |Mean value of the magnitude of the frequency domain body acceleration signals  |
+| freqBodyAccMagStdDev |num  |[-1,1]  |Standard deviation value of the magnitude of the frequency domain body acceleration signals  |
 | freqBodyAccJerkMagMean |num  |[-1,1]  |  |
 | freqBodyAccJerkMagStdDev |num  |[-1,1]  |  |
 | freqBodyGyroMagMean |num  |[-1,1]  |  |
