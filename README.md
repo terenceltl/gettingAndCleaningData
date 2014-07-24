@@ -72,7 +72,7 @@ Yet, as discussed in the course forum, this "wide" format of tidy data is consid
 
 https://class.coursera.org/getdata-005/forum/thread?thread_id=199
 
-Finally, the tidy data set was written to a text file, *tidyDataSetMeanValues.txt* in the "output" folder. The function `write.table()` function with the parameter `row.names=FALSE` was used, and hence the text file can be read back into R with the `read.table()` function with the parameter `header=TRUE` .  
+Finally, the tidy data set was written to a text file, *tidyDataSetMeanValues.txt* in the "output" folder. The function `write.table()` with the parameter `row.names=FALSE` was used, and hence the text file can be read back into R with the `read.table()` function with the parameter `header=TRUE` .  
 
 ### How to use the *run_analysis.R* script  
   
