@@ -24,9 +24,9 @@ Some points to note:
     * Gyro: signals coming from the gyroscope, angular velocity
     * Jerk: Jerk signals obtained by deriving the body linear acceleration or angular velocity in time
     * Mag: the magnitude of the three-dimensional signals, calculated using the Euclidean norm
-    * X,Y,Z: the 3-axial signals in the X, Y and Z directions
+    * X,Y,Z: the 3-axial signals in the X, Y and Z directions, respectively
     * Mean: the mean value estimated from these signals
-    * StdDev: the standard deviation estimated from these signals
+    * StdDev: the standard deviation value estimated from these signals
 * Finally, it should be noted that the numeric values in the tidy data set are the group-wise mean (by both subject and activity) of the values in the original raw data set. Well, yes, so they are mean of mean values and mean of standard deviation values.
 
 
