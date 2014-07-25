@@ -78,6 +78,7 @@ Finally, the tidy data set was written to a text file, *tidyDataSetMeanValues.tx
 
 ### How to use the *run_analysis.R* script  
   
+* Download the raw data zip file, "*UCI HAR Dataset.zip*", from this link mentioned above: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 * From the "*UCI HAR Dataset.zip*" file, extract the "*UCI HAR Dataset*" folder into a working directory.
 * The script file should be placed in the same working directory into which the "UCI HAR Dataset" folder was extracted.
 * You may have to manually set the working directory in R / RStudio to the location of the source file.
