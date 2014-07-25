@@ -25,7 +25,7 @@ The process of derving the tidy data set from the original raw data set was auto
 - tidyDataSetMeanValues.txt: *The* tidy data set. This was uploaded to Coursera's submission page and was also included in this repo for convenience. This data set has 180 obervations (rows) and 68 variables (columns, to be described in the code book).
 - CodeBook.md: The code book that describes the naming convention of the variables and the variables themselves.
  
-### The original raw data set and how it was converted into the tidy data set
+### About the original raw data set and how it was converted into the tidy data set
 
 For full details on the original raw data set, please refer back to its own documentation files, such as README.txt and features_info.txt, that came with the original data set.
 
@@ -78,14 +78,14 @@ Finally, the tidy data set was written to a text file, *tidyDataSetMeanValues.tx
 
 ### How to use the *run_analysis.R* script  
   
-* Download the raw data zip file, "*UCI HAR Dataset.zip*", from this link mentioned above: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-* From the "*UCI HAR Dataset.zip*" file, extract the "*UCI HAR Dataset*" folder into a working directory.
-* The script file should be placed in the same working directory into which the "UCI HAR Dataset" folder was extracted.
-* You may have to manually set the working directory in R / RStudio to the location of the source file.
+* If necessary, create a designated working directory for this purpose. 
+* In R / RStudio, set the working directory to the path you chose above.
+* Download the R script file from this repo, and place it, preferably (but not necessarily), into the designated working directory.  
+* The script will download the raw data zip file into the working directory, and extract the "*UCI HAR Dataset*" folder into the working directory.
 * The *plyr* package is required for functions like `ddply()` and `numcolwise()`. As such, you may wish to do `install.packages("plyr")` if necessary.
-* My own preferred way to run the script is to open the script in RStudio, and do a Session>Set Working Directory>To Source File Location. Then select the whole script and press CTRL-ENTER to run all the lines.
+* My own preferred way to run the script is to open the script in RStudio, then select the whole script and press CTRL-ENTER to run all the lines.
 * The whole process of converting the original raw data set to the tidy data set may take a while, depending on your hardware.
-* The tidy data set text file *tidyDataSetMeanValues.txt* is saved into the "output" folder. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
+* The tidy data set text file *tidyDataSetMeanValues.txt* is saved into the "output" folder to be created in the working directory. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
 
 
 
