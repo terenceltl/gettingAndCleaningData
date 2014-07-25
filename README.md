@@ -85,7 +85,7 @@ Finally, the tidy data set was written to a text file, *tidyDataSetMeanValues.tx
 * The *plyr* package is required for functions like `ddply()` and `numcolwise()`. As such, you may wish to do `install.packages("plyr")` if necessary.
 * My own preferred way to run the script is to open the script in RStudio, then select the whole script and press CTRL-ENTER to run all the lines.
 * The whole process of converting the original raw data set to the tidy data set may take a while, depending on your hardware.
-* The tidy data set text file *tidyDataSetMeanValues.txt* is saved into the "output" folder to be created in the working directory. It can be loaded into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
+* The tidy data set text file *tidyDataSetMeanValues.txt* is saved into the "output" folder to be created in the working directory. It can be loaded back into R as a data frame by, for example, `df <- read.table("output/tidyDataSetMeanValues.txt",header=TRUE)` .
 
 
 
