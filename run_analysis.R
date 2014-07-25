@@ -1,9 +1,20 @@
 ## run_analysis.R
-## This R script should be placed in the same directory
-## in which the "UCI HAR Dataset" folder also resides.
-## You may have to manually set the working directory to the 
-## location of the source file.
+## This R script will download the raw data set from:
+## https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+## into the current working directory, and extract the
+## folder "UCI HAR Dataset" into the working directory.
+## Though not necessary to place this R script in the
+## working direcotry, you may wish to do so to make things "tidy" : )
+## The final tidy data set will be saved into a
+## "output" folder (will be created if it doesn't exist)
+## as a text file "tidyDataSetMeanValues.txt".
 ## The package "plyr" is required for the function ddply().
+
+## Download the raw data zip file and
+## unzip it into the working directory
+fileUrl = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(fileUrl,"Dataset.zip",method="auto",mode="wb")
+unzip("Dataset.zip")
 
 ## read in the necessary files for the test and train sets
 y.train = read.table("UCI HAR Dataset/train/y_train.txt")
@@ -50,7 +61,7 @@ names(meanStdDF) = sub("BodyBody","Body",names(meanStdDF))
 library("plyr")
 tidyDF = ddply(meanStdDF,.(subject, activity),numcolwise(mean))
 
-## Write the tidy data set to the output folder in the
+## Write the tidy data set to the "output" folder in the
 ## working directory
 if (!file.exists("output")) {dir.create("output")}
 write.table(tidyDF, file="output/tidyDataSetMeanValues.txt",row.names=FALSE)
