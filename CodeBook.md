@@ -15,6 +15,7 @@ Please refer to the README.md file in this repo on how the tidy data set was cre
 Some points to note:
 
 * The variable names conform to the CamelCase convetion starting with a lower case letter
+* A balance was take between the length and the descriptiveness of the variable names
 * Though obvious to some, some explanation of the short form / keywords used in the variable names:
     * time: time domain signals that were captured at a constant rate of 50 Hz
     * freq: frequency domain signals produced by Fast Fourier Transform
